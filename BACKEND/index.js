@@ -30,10 +30,10 @@ app.use("/api/history", historyRouter)
 app.use("/api/liability", liabilityRouter)
 
 if (process.env.NODE_ENV === "production") {
-	app.use(express.static(path.join(__dirname, "/frontend1/dist")));
+	app.use(express.static(path.join(__dirname, "/FRONTEND1/dist")));
 
 	app.get("*", (req, res) => {
-		res.sendFile(path.resolve(__dirname, "frontend1", "dist", "index.html"));
+		res.sendFile(path.resolve(__dirname, "FRONTEND1", "dist", "index.html"));
 	});
 }
 
