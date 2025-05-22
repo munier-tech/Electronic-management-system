@@ -11,8 +11,8 @@
     "mongoose": "^8.14.3",
     "redis": "^5.0.1"
   },
-"devDependencies": {
-  "@vitejs/plugin-react": "^4.0.0",   // version number may differ
+  "devDependencies": {
+  "@vitejs/plugin-react": "^4.0.0",   
   "@tailwindcss/postcss": "^4.1.7",
   "autoprefixer": "^10.4.21",
   "nodemon": "^3.1.10",
