@@ -14,11 +14,13 @@ const SignUp = () => {
 
   const { isLoading, signUp } = useUserStore();
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    signUp(formData);
-  };
-
+ const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  signUp({
+    ...formData,
+    createdAt: new Date()
+  });
+};
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-800 to-pink-700 p-4">
       <motion.div
