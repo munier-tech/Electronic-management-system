@@ -16,7 +16,10 @@ const SignUp = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    signUp(formData);
+    signUp({
+      ...formData,
+      createdAt: new Date()
+    });
   };
 
   return (
