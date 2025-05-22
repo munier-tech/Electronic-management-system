@@ -22,8 +22,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon backend/index.js",
-    "start": "node backend/index.js",
+    "dev": "nodemon BACKEND/index.js",
+    "start": "node BACKEND/index.js",
     "build": "npm install && npm install --prefix FRONTEND1 && npm run build --prefix FRONTEND1"
   },
   "keywords": [],
