@@ -59,7 +59,6 @@ const App: React.FC = () => {
           <Route path="/DialyLiability" element={user?.role === "admin" ? <DialyLiability /> : <Navigate to="/" />} />
           <Route path="/dashboard" element={user?.role === "admin" ? <Dashboard /> : <Navigate to="/" />} />
           <Route path="/dailysales" element={user?.role === "admin" ? <DailySales /> : <Navigate to="/" />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
   
