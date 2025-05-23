@@ -10,7 +10,6 @@ import { useUserStore } from './store/useUserStore';
 import AddDailyProduct from './components/UserActivities/AddDailyProduct';
 import Dashboard from './pages/Dashboard';
 import DailySales from './components/Admin/DailySales';
-import NotFound from './pages/NotFoundPage';
 import UsersDailyProductsComponent from './components/Admin/UserProducts';
 import DailySalesList from './components/UserActivities/ListDailyProducts';
 import UserProductHistory from './components/UserActivities/UserProductHistory';
@@ -59,7 +58,6 @@ const App: React.FC = () => {
           <Route path="/DialyLiability" element={user?.role === "admin" ? <DialyLiability /> : <Navigate to="/" />} />
           <Route path="/dashboard" element={user?.role === "admin" ? <Dashboard /> : <Navigate to="/" />} />
           <Route path="/dailysales" element={user?.role === "admin" ? <DailySales /> : <Navigate to="/" />} />
-          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
   
